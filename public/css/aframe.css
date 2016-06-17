@@ -1,0 +1,88 @@
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+.brownColor, #contacts .brownColor {
+   color: #734600;
+}
+.whiteColor, #contacts .whiteColor {
+   color: #ffffff;
+}
+.tanColor {
+  color: #e6c99c;
+}
+
+#contacts .tanBackground {
+   background-color: #e6c99c;
+}
+
+#contacts .btn:hover {
+   color:#734600;
+   background-color: #e6c99c;
+   opacity: .7;
+}
+
+#services-list.brownColor h5{
+   color: #734600;
+}
+
+a, p {
+   color: #734600;
+}
+
+a:hover, #explore .icon-angle-down {
+   color: #e68d00;
+}
+
+.service img{
+   margin-top:0;
+   width: auto;
+}
+
+ul.social li a i{
+   color: #e68d00
+}
+
+ul.social li a:hover i, #explore .tanColor.icon-angle-down:hover{
+   color: #e6c99c;
+}
+
+#contacts {
+   background-color:#b68250;
+}
+
+div[id^='explore'] a{
+color: #e68d00;
+}
+
+.explore:hover a {
+    color: #f5deb3;
+  }
+
+.explore a i {
+  font-size: 6em;
+}
+.explore, .explore a:focus, .explore a:hover {
+  opacity: 1;
+  margin-top: 4em;
+  outline: none;
+  text-decoration: none;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.intro {
+  font-size: 12px;
+}
+
+.blackOutline {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}

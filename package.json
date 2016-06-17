@@ -1,0 +1,10 @@
+{
+    "name": "virtualHost",
+    "main": "index.js",
+    "version": "1.0.0",
+    "dependencies": {
+        "express": "~4.0.x",
+        "path": "~0.12.7",
+        "nodemailer": "~2.4.2 "
+    }
+}
