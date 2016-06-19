@@ -12,24 +12,28 @@ var transporter = nodemailer.createTransport(sendmailTransport(options))
 
 routes.use(function(req, res, next) {
     console.log('----- Request for AFrame received.-----');
-    console.log('req.url: ' + req.url);
-    console.log('req.baseUrl: ' + req.baseUrl);
     console.log('req.method: ' + req.method);
-    console.log('req.originalUrl: ' + req.originalUrl);
-    console.log('req.hostname: ' + req.hostname);
     console.log('req.params: ' + JSON.stringify(req.params));
-    console.log('req.path' + req.path);
+    console.log('req.path: ' + req.path);
+    console.log('req.body: ' + JSON.stringify(req.body));
     console.log('---------------------------------------');
     next();
 });
 
 routes.post('/mail', function(req, res, next) {
+    var mailOptions = {};
     console.log('Attempting to send email.');
-    var mailOptions = {
-        from: '"A-Frame Website" contactform@aframe.com',
-        to: 'david.a.leroy@gmail.com',
-        subject: 'TEST',
-        text: 'TESTING the contact form'
+
+    if (!(body && body.name && body.email && body.message)) {
+        res.send(500);
+        return console.log('req.body is missing the required values.');
+    }
+
+    mailOptions = {
+        from: req.body.name,
+        to: 'a.frame.office@gmail.com',
+        subject: 'A-frame website contact form.',
+        text: req.body.message
     };
 
     transporter.sendMail(mailOptions, function(error, info) {
@@ -38,9 +42,9 @@ routes.post('/mail', function(req, res, next) {
             console.log('Message failed.');
             return console.log(error);
         }
-        console.log('Message sent: ' + info.response);
 
         res.send(200);
+        console.log('Message sent: ' + info.response);
     }); 
 });
 
