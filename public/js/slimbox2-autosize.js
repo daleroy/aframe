@@ -46,7 +46,7 @@ if (!/android|iphone|ipod|series60|symbian|windows ce|blackberry/i.test(navigato
 
 		image = $('<div id="lbImage" />').appendTo(center).append(
 			sizer = $('<div style="position: relative;" />').append([
-				slide    = $('<img id="lbSlide" src="white.gif" alt="" />')[0],
+				slide    = $('<img id="lbSlide" src="" alt="" />')[0],
 				nextLink = $('<a id="lbNextLink" href="#" />').text('.').click(next)[0],
 				prevLink = $('<a id="lbPrevLink" href="#" />').text('.').click(previous)[0]
 			])[0]
