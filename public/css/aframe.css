@@ -1,3 +1,9 @@
+@media (max-width: 440px) {
+  #logo img {
+    width: 300px;
+  }
+}
+
 /* centered columns styles */
 .row-centered {
     text-align:center;
@@ -85,4 +91,12 @@ color: #e68d00;
 
 .blackOutline {
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+#portfolio .member-photo img {
+    width: auto;
+}
+
+.member-photo {
+     background: #f2f2f2;
 }
