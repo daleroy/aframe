@@ -192,6 +192,81 @@ jQuery(document).ready(function() {
 	});
 
 	/*-----------------------------------------------------------------------------------*/
+	/*	Portfolio
+	/*-----------------------------------------------------------------------------------*/
+	$('.lightbox').click(function(e){
+		var culkin = [["images/projects/Culkin/Culkin-Dual-Fireplace-A-Frame-Construction.JPG"],
+			["images/projects/Culkin/Culkin-Family-Dining-Room-A-Frame-Construction.jpg"],
+			["images/projects/Culkin/Culkin-Family-Room-Fireplace-A-Frame-Construction.JPG"],
+			["images/projects/Culkin/Culkin-Family-Room-Staircase-A-Frame-Construction.JPG"],
+			["images/projects/Culkin/Culkin-Sitting-Room-A-Frame-Construction.JPG" ],
+			["images/projects/Culkin/Culkin-Staircase-2-A-Frame-Construction.JPG"],
+			["images/projects/Culkin/Culkin-Staircase-A-Frame-Construction.jpg"],
+			["images/projects/Culkin/Culkin-Stonework-1-A-Frame-Construction.JPG"],
+			["images/projects/Culkin/Culkin-Stonework-A-Frame-Construction.JPG"]];
+
+		var greenTurtle = [["images/projects/6_Green_Turtle/Green-Turtle-A-Frame-Construction.jpg"],
+			["images/projects/6_Green_Turtle/Green-Turtle-BBQ-A-Frame-Construction.jpg"],
+			["images/projects/6_Green_Turtle/Green-Turtle-Bath-A-Frame-Construction.jpg"],
+			["images/projects/6_Green_Turtle/Green-Turtle-Dining-Room-A-Frame-Construction.jpg"],
+			["images/projects/6_Green_Turtle/Green-Turtle-Entrance-1-A-Frame-Construction.jpg"],
+			["images/projects/6_Green_Turtle/Green-Turtle-Entrance-2-A-Frame-Construction.jpg"],
+			["images/projects/6_Green_Turtle/Green-Turtle-Family-Room-Fireplace-A-Frame-Construction.JPG"],
+			["images/projects/6_Green_Turtle/Green-Turtle-Foyer-1-A-Frame-Construction.JPG"],
+			["images/projects/6_Green_Turtle/Green-Turtle-Foyer-3-A-Frame-Construction.jpg"],
+			["images/projects/6_Green_Turtle/Green-Turtle-Foyer-A-Frame-Construction.jpg"],
+			["images/projects/6_Green_Turtle/Green-Turtle-Kitchen-1-A-Frame-Construction.jpg"],
+			["images/projects/6_Green_Turtle/Green-Turtle-Kitchen-2-A-Frame-Construction.jpg"],
+			["images/projects/6_Green_Turtle/Green-Turtle-Kitchen-3-A-Frame-Construction.jpg"],
+			["images/projects/6_Green_Turtle/Green-Turtle-Patio-1-A-Frame-Construction.jpg"],
+			["images/projects/6_Green_Turtle/Green-Turtle-Patio-2-A-Frame-Construction.jpg"],
+			["images/projects/6_Green_Turtle/Green-Turtle-Patio-3-A-Frame-Construction.jpg"],
+			["images/projects/6_Green_Turtle/Green-Turtle-Shower-A-Frame-Construction.jpg"],
+			["images/projects/6_Green_Turtle/Green-Turtle-Tile-Work-2-A-Frame-Construction.jpg"],
+			["images/projects/6_Green_Turtle/Green-Turtle-Tile-Work-A-Frame-Construction.jpg"]];
+
+		var gariano = [["images/projects/Gariano/Gariano-Bathroom-A-Frame-Construction.JPG"],
+			["images/projects/Gariano/Gariano-Bathroom-Sink-A-Frame-Construction.JPG"],
+			["images/projects/Gariano/Gariano-Dining-Room-1-A-Frame-Construction.JPG"],
+			["images/projects/Gariano/Gariano-Family-Area-A-Frame-Construction.JPG"],
+			["images/projects/Gariano/Gariano-Kitchen-1-A-Frame-Construction.JPG"],
+			["images/projects/Gariano/Gariano-Kitchen-A-Frame-Construction.JPG"],
+			["images/projects/Gariano/Gariano-Living-Area-1-A-Frame-Construction.JPG"],
+			["images/projects/Gariano/Gariano-Living-Area-2-A-Frame-Construction.JPG"],
+			["images/projects/Gariano/Gariano-Living-Room-1-A-Frame-Construction.JPG"],
+			["images/projects/Gariano/Gariano-Living-Room-2-A-Frame-Construction.jpg"],
+			["images/projects/Gariano/Gariano-Living-Room-4-A-Frame-Construction.JPG"],
+			["images/projects/Gariano/Gariano-Living-Room-Ocean-View-Modern-A-Frame-Construction.JPG"],
+			["images/projects/Gariano/Gariano-Powder-Closets-A-Frame-Construction.JPG"],
+			["images/projects/Gariano/Gariano-Sitting-Room-1-A-Frame-Construction.JPG"],
+			["images/projects/Gariano/Gariano-Tile-A-Frame-Construction.JPG"],
+			["images/projects/Gariano/Gariano-Tile-Closeup-A-Frame-Construction.JPG"]
+		];
+
+		var sbArray;
+		var currentTarget = $(e.currentTarget);
+		e.preventDefault();
+
+		switch (currentTarget.attr('id')) {
+			case 'culkinLightBox':
+				sbArray = culkin;
+				break;
+			case 'greenTurtleLightBox':
+				sbArray = greenTurtle;
+				break;
+			case 'garianoLightBox':
+				sbArray = gariano;
+				break;
+		}
+
+		// If one of the project thumbnails have been clicked then load the light box
+		// with the rest of the photos.
+		if (sbArray) {
+			$.slimbox(sbArray, 0, {loop: true});
+		}
+	});
+
+	/*-----------------------------------------------------------------------------------*/
 	/*	Contacts
 	/*-----------------------------------------------------------------------------------*/
 
