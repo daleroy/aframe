@@ -243,8 +243,8 @@ jQuery(document).ready(function() {
 			["images/projects/Gariano/Gariano-Tile-Closeup-A-Frame-Construction.JPG"]
 		];
 
-		var mission = [['images/projects/Mission_Beach/Mission-Beach-A-Frame-Construction_6034.jpg'],
-			['images/projects/Mission_Beach/Mission-Beach-A-Frame-Construction_0001.jpg'],
+		var mission = [['images/projects/Mission_Beach/Mission-Beach-A-Frame-Construction_6034.JPG'],
+			['images/projects/Mission_Beach/Mission-Beach-A-Frame-Construction_0001.JPG'],
 			['images/projects/Mission_Beach/Mission-Beach-A-Frame-Construction_6020.JPG'],
 			['images/projects/Mission_Beach/Mission-Beach-A-Frame-Construction_6032.JPG'],
 			['images/projects/Mission_Beach/Mission-Beach-A-Frame-Construction_6033.JPG']
