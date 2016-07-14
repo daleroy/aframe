@@ -95,6 +95,7 @@ color: #e68d00;
 
 #portfolio .member-photo img {
     width: auto;
+    max-width: 255px;
 }
 
 .member-photo {
