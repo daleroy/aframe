@@ -24,7 +24,7 @@ routes.post('/mail', function(req, res, next) {
     var mailOptions = {};
     console.log('Attempting to send email.');
 
-    if (!(body && body.name && body.email && body.message)) {
+    if (!(req.body && req.body.name && req.body.email && req.body.message)) {
         res.send(500);
         return console.log('req.body is missing the required values.');
     }
