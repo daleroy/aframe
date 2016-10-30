@@ -243,12 +243,58 @@ jQuery(document).ready(function() {
 			["images/projects/Gariano/Gariano-Tile-Closeup-A-Frame-Construction.JPG"]
 		];
 
-		var mission = [['images/projects/Mission_Beach/Mission-Beach-A-Frame-Construction_6034.JPG'],
+		var missionBeach = [['images/projects/Mission_Beach/Mission-Beach-A-Frame-Construction_6034.JPG'],
 			['images/projects/Mission_Beach/Mission-Beach-A-Frame-Construction_0001.JPG'],
 			['images/projects/Mission_Beach/Mission-Beach-A-Frame-Construction_6020.JPG'],
 			['images/projects/Mission_Beach/Mission-Beach-A-Frame-Construction_6032.JPG'],
 			['images/projects/Mission_Beach/Mission-Beach-A-Frame-Construction_6033.JPG']
-		]
+		];
+
+		var beryl = [['images/projects/Beryl/Beryl_St_10.jpg'],
+			['images/projects/Beryl/Beryl_St_11.jpg'], ['images/projects/Beryl/Beryl_St_12.jpg'],
+			['images/projects/Beryl/Beryl_St_13.jpg'], ['images/projects/Beryl/Beryl_St_14.jpg'],
+			['images/projects/Beryl/Beryl_St_15.jpg'], ['images/projects/Beryl/Beryl_St_16.jpg'],
+			['images/projects/Beryl/Beryl_St_17.jpg'], ['images/projects/Beryl/Beryl_St_18.jpg'],
+			['images/projects/Beryl/Beryl_St_19.jpg'], ['images/projects/Beryl/Beryl_St_1.jpg'],
+			['images/projects/Beryl/Beryl_St_20.jpg'], ['images/projects/Beryl/Beryl_St_21.jpg'],
+			['images/projects/Beryl/Beryl_St_22.jpg'], ['images/projects/Beryl/Beryl_St_23.jpg'],
+			['images/projects/Beryl/Beryl_St_24.jpg'], ['images/projects/Beryl/Beryl_St_25.jpg'],
+			['images/projects/Beryl/Beryl_St_26.jpg'], ['images/projects/Beryl/Beryl_St_27.jpg'],
+			['images/projects/Beryl/Beryl_St_28.jpg'], ['images/projects/Beryl/Beryl_St_29.jpg'],
+			['images/projects/Beryl/Beryl_St_2.jpg'], ['images/projects/Beryl/Beryl_St_30.jpg'],
+			['images/projects/Beryl/Beryl_St_31.jpg'], ['images/projects/Beryl/Beryl_St_32.jpg'],
+			['images/projects/Beryl/Beryl_St_33.jpg'], ['images/projects/Beryl/Beryl_St_34.jpg'],
+			['images/projects/Beryl/Beryl_St_35.jpg'], ['images/projects/Beryl/Beryl_St_36.jpg'],
+			['images/projects/Beryl/Beryl_St_37.jpg'], ['images/projects/Beryl/Beryl_St_38.jpg'],
+			['images/projects/Beryl/Beryl_St_39.jpg'], ['images/projects/Beryl/Beryl_St_3.jpg'],
+			['images/projects/Beryl/Beryl_St_40.jpg'], ['images/projects/Beryl/Beryl_St_41.jpg'],
+			['images/projects/Beryl/Beryl_St_4.jpg'], ['images/projects/Beryl/Beryl_St_5.jpg'],
+			['images/projects/Beryl/Beryl_St_6.jpg'], ['images/projects/Beryl/Beryl_St_7.jpg'],
+			['images/projects/Beryl/Beryl_St_8.jpg'], ['images/projects/Beryl/Beryl_St_9.jpg']];
+
+		var mission = [['images/projects/Mission/Mission_Blvd_11.jpg'],
+			['images/projects/Mission/Mission_Blvd_12.jpg'], ['images/projects/Mission/Mission_Blvd_13.jpg'],
+			['images/projects/Mission/Mission_Blvd_14.jpg'], ['images/projects/Mission/Mission_Blvd_15.jpg'],
+			['images/projects/Mission/Mission_Blvd_16.jpg'], ['images/projects/Mission/Mission_Blvd_17.jpg'],
+			['images/projects/Mission/Mission_Blvd_18.jpg'], ['images/projects/Mission/Mission_Blvd_19.jpg'],
+			['images/projects/Mission/Mission_Blvd_1.jpg'], ['images/projects/Mission/Mission_Blvd_20.jpg'],
+			['images/projects/Mission/Mission_Blvd_21.jpg'], ['images/projects/Mission/Mission_Blvd_22.jpg'],
+			['images/projects/Mission/Mission_Blvd_23.jpg'], ['images/projects/Mission/Mission_Blvd_24.jpg'],
+			['images/projects/Mission/Mission_Blvd_25.jpg'], ['images/projects/Mission/Mission_Blvd_26.jpg'],
+			['images/projects/Mission/Mission_Blvd_27.jpg'], ['images/projects/Mission/Mission_Blvd_28.jpg'],
+			['images/projects/Mission/Mission_Blvd_29.jpg'], ['images/projects/Mission/Mission_Blvd_2.jpg'],
+			['images/projects/Mission/Mission_Blvd_30.jpg'], ['images/projects/Mission/Mission_Blvd_31.jpg'],
+			['images/projects/Mission/Mission_Blvd_32.jpg'], ['images/projects/Mission/Mission_Blvd_33.jpg'],
+			['images/projects/Mission/Mission_Blvd_34.jpg'], ['images/projects/Mission/Mission_Blvd_35.jpg'],
+			['images/projects/Mission/Mission_Blvd_36.jpg'], ['images/projects/Mission/Mission_Blvd_37.jpg'],
+			['images/projects/Mission/Mission_Blvd_38.jpg'], ['images/projects/Mission/Mission_Blvd_39.jpg'],
+			['images/projects/Mission/Mission_Blvd_3.jpg'], ['images/projects/Mission/Mission_Blvd_40.jpg'],
+			['images/projects/Mission/Mission_Blvd_41.jpg'], ['images/projects/Mission/Mission_Blvd_42.jpg'],
+			['images/projects/Mission/Mission_Blvd_43.jpg'], ['images/projects/Mission/Mission_Blvd_44.jpg'],
+			['images/projects/Mission/Mission_Blvd_45.jpg'], ['images/projects/Mission/Mission_Blvd_4.jpg'],
+			['images/projects/Mission/Mission_Blvd_5.jpg'], ['images/projects/Mission/Mission_Blvd_6.jpg'],
+			['images/projects/Mission/Mission_Blvd_7.jpg'], ['images/projects/Mission/Mission_Blvd_8.jpg'],
+			['images/projects/Mission/Mission_Blvd_9.jpg']];
 
 		var sbArray;
 		var currentTarget = $(e.currentTarget);
@@ -263,6 +309,12 @@ jQuery(document).ready(function() {
 				break;
 			case 'garianoLightBox':
 				sbArray = gariano;
+				break;
+			case 'missionBeachLightBox':
+				sbArray = missionBeach;
+				break;
+			case 'berylLightBox':
+				sbArray = beryl;
 				break;
 			case 'missionLightBox':
 				sbArray = mission;
